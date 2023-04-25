@@ -1,0 +1,46 @@
+.nsitem {
+  height: 150rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nsitem .pic {
+  height: 150rpx;
+}
+
+.nsitem .pic image {
+  height: 100%;
+  width: 220rpx;
+}
+
+.nsitem .text {
+  height: 150rpx;
+  width: 440rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nsitem .text .title {
+  line-height: 1.4em;
+  font-size: 32rpx;
+  color: var(--globalColor);
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nsitem .text .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: var(--greyColor);
+}
+
+.nsitem .text .info van-icon {
+  font-size: 26rpx;
+}

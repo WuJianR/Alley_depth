@@ -1,0 +1,17 @@
+<view class="copyright">
+	<view>
+		Copyright © 2023 版权所有
+	</view>
+	<view>
+		巷子深贸易有限公司所有
+	</view>
+	<view>
+		江西省南昌市南昌大学前湖校区智华科技楼A区708a
+	</view>
+</view>
+
+<view class="kefu">
+	<button class="btn" open-type="contact"></button>
+	<image src="/static/images/kefu.png" mode="aspectFill" class="pic"/>
+	<view class="line"></view>
+</view>

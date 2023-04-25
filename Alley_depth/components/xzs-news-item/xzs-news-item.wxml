@@ -1,0 +1,22 @@
+<view class="nsitem">
+	<view class="pic">
+		<image src="{{picurl}}" mode="aspectFill"/>
+	</view>
+	<view class="text">
+		<view class="title">{{title}}</view>
+		<view class="info">
+			<view class="block">
+				<van-icon name="underway-o" />
+				{{time}}
+			</view>
+			<view class="block">
+				<van-icon name="eye-o"/>
+				{{viewCount}}
+			</view>
+			<view class="block">
+				<van-icon name="contact" />
+				{{author}}
+			</view>
+		</view>
+	</view>
+</view>

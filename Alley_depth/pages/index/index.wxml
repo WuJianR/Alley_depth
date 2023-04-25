@@ -1,5 +1,8 @@
+<!-- 封装的公共头部组件 -->
 <xzs-header></xzs-header>
+
 <view class="banner">
+<!-- 微信原生可滚动视图区域组件实现轮播图 -->
   <swiper previous-margin="30rpx" indicator-dots circular indicator-color="#fff" autoplay interval="3000">
     <swiper-item>
       <image src="/static/images/banner0.jpg" mode=""/>
@@ -17,6 +20,7 @@
 </view>
 
 <view class="scrollNav">
+  <!-- 微信原生可滚动视图区域组件 -->
   <scroll-view scroll-x>
     <view class="scrollItem" wx:for="{{projectList}}" wx:key="_id">
       <view class="itemImg">
@@ -29,6 +33,7 @@
 
 <view class="about">
   <view class="pubTitle">
+    <!-- 一种很精美的ui设计,值的学习 -->
     <view class="en">introduce</view>
     <view class="cn">茶美文化馆简介</view>
     <view class="line"></view>
@@ -42,6 +47,7 @@
 </view>
 
 <view class="news">
+  <!-- 一种很精美的ui设计,值的学习 -->
   <view class="pubTitle">
     <view class="en">News</view>
     <view class="cn">新闻资讯</view>
@@ -50,10 +56,10 @@
   <view class="content">
     <view class="box">
       <view class="item">
-        <xzs-news-item wx:for="{{newsList}}" wx:key="_id" title="{{item.title}}" author="{{item.author}}" time="{{item.publish_date}}" viewCount="{{item.view_count}}" picurl="{{item.picurl}}"></xzs-news-item>
+        <xzs-news-item wx:for="{{newsList}}" wx:key="_id" title="{{item.title}}" author="{{item.author}}" time="{{item.publish_date}}" viewCount="{{item.view_count}}" picurl="{{item.picurl}}" thisId="{{item._id}}"></xzs-news-item>
       </view>
     </view>
   </view>
 </view>
-
+<!-- 封装的公共底部组件 -->
 <xzs-footer></xzs-footer>

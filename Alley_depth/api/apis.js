@@ -7,13 +7,26 @@ export function listNav() {
 	})
 }
 
-export function listNews() {
+export function listNews(data) {
 	return request({
 		url: "/news/get",
 		method: "POST",
-		data: {
-			limit: 5,
-      hot: true
-		}
+		data
+	})
+}
+
+export function listAllNews(data) {
+	return request({
+		url: "/news/get",
+		method: "POST",
+		data
+	})
+}
+
+export function getNewsDetail(data) {
+	return request({
+		url: "/news/detail",
+		method: "POST",
+		data
 	})
 }

@@ -21,6 +21,9 @@ Component({
     viewCount: {
       type: String,
       value: "0"
+    },
+    thisId: {
+      type: String
     }
   },
 

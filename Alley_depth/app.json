@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/classify/classify",
     "pages/news/news",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/newsDetail/newsDetail"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "巷子深茶美文化馆",
     "navigationBarTextStyle":"white",
-    "backgroundColor": "#eeeeee"
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
@@ -45,6 +47,7 @@
     "xzs-header": "components/xzs-header/xzs-header",
     "xzs-news-item": "components/xzs-news-item/xzs-news-item",
     "van-icon": "@vant/weapp/icon/index",
+    "van-loading": "@vant/weapp/loading/index",
     "xzs-footer": "components/xzs-footer/xzs-footer"
   }
 }

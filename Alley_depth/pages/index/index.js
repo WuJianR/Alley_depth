@@ -1,6 +1,7 @@
 // index.js
 import {formatNum, formatDate} from "../../utils/common.js"
 import {listNav, listNews} from "../../api/apis"
+// 输入Page回车可以快捷生成Page模板
 Page({
 
   /**
@@ -22,7 +23,10 @@ Page({
   },
   // 获取新闻列表
   getNewsList() {
-    listNews().then(res => {
+    listNews( {
+			limit: 5,
+      hot: true
+		}).then(res => {
       res.data.forEach(item => {
         item.view_count = formatNum(item.view_count)
         item.publish_date = formatDate(item.publish_date)
@@ -36,6 +40,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 挂载函数中高端options包含上一个页面传给该页面的参数
     this.getProList()
     this.getNewsList()
   },

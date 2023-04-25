@@ -1,22 +1,23 @@
-<view class="nsitem">
+
+<navigator url="/pages/newsDetail/newsDetail?id={{thisId}}" class="nsitem">
 	<view class="pic">
-		<image src="{{picurl}}" mode="aspectFill"/>
+		<image src="{{picurl}}" class="img" mode="aspectFill"/>
 	</view>
 	<view class="text">
 		<view class="title">{{title}}</view>
 		<view class="info">
 			<view class="block">
-				<van-icon name="underway-o" />
+				<van-icon name="underway-o" class="van-icon"/>
 				{{time}}
 			</view>
 			<view class="block">
-				<van-icon name="eye-o"/>
+				<van-icon name="eye-o" class="van-icon"/>
 				{{viewCount}}
 			</view>
 			<view class="block">
-				<van-icon name="contact" />
+				<van-icon name="contact" class="van-icon"/>
 				{{author}}
 			</view>
 		</view>
 	</view>
-</view>
+</navigator>

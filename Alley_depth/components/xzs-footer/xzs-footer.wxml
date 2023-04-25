@@ -10,6 +10,7 @@
 	</view>
 </view>
 
+<!-- 固定在页面具体位置的客服标签，许多样式值得学习 -->
 <view class="kefu">
 	<button class="btn" open-type="contact"></button>
 	<image src="/static/images/kefu.png" mode="aspectFill" class="pic"/>

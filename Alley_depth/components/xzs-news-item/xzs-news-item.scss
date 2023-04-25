@@ -5,7 +5,7 @@
 	justify-content: space-between;
 	.pic {
 		height: 150rpx;
-		image {
+		.img {
 			height: 100%;
 			width: 220rpx;
 		}
@@ -32,7 +32,7 @@
 			justify-content:space-between;
 			font-size: 26rpx;
 			color: var(--greyColor);
-			van-icon {
+			.van-icon {
 				font-size: 26rpx;
 			}
 		}

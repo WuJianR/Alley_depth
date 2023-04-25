@@ -1,3 +1,4 @@
+// 项目初始化时自带的文件，暴露了格式化事件的方法
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1

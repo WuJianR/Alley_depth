@@ -1,2 +1,16 @@
 <xzs-header></xzs-header>
-<text>pages/news/news.wxml</text>
+<view class="news">
+  <view class="content">
+    <view class="box">
+      <view class="item">
+        <xzs-news-item wx:for="{{newsList}}" wx:key="_id" title="{{item.title}}" author="{{item.author}}" time="{{item.publish_date}}" viewCount="{{item.view_count}}" picurl="{{item.picurl}}" thisId="{{item._id}}"></xzs-news-item>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="loadOut">
+	<van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+	<view class="noData" wx:else>没有更多数据了~</view>
+</view>
+
+<xzs-footer></xzs-footer>

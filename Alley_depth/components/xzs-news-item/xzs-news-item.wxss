@@ -9,7 +9,7 @@
   height: 150rpx;
 }
 
-.nsitem .pic image {
+.nsitem .pic .img {
   height: 100%;
   width: 220rpx;
 }
@@ -41,6 +41,6 @@
   color: var(--greyColor);
 }
 
-.nsitem .text .info van-icon {
+.nsitem .text .info .van-icon {
   font-size: 26rpx;
 }

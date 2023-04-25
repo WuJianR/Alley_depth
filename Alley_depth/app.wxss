@@ -1,6 +1,9 @@
 view, text {
+  /* 标准盒子模型，盒子大小不受padding和border影响 */
   box-sizing: border-box;
 }
+/* 定义全局的css颜色属性 */
+/* 使用方法 color: var(--themeColor) */
 page {
   --themeColor: #BDA066;
   --globalColor: #1a1b1c;

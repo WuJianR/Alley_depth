@@ -4,7 +4,8 @@
     "pages/classify/classify",
     "pages/news/news",
     "pages/user/user",
-    "pages/newsDetail/newsDetail"
+    "pages/newsDetail/newsDetail",
+    "pages/productDetail/productDetail"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",
@@ -46,8 +47,11 @@
   "usingComponents": {
     "xzs-header": "components/xzs-header/xzs-header",
     "xzs-news-item": "components/xzs-news-item/xzs-news-item",
+    "xzs-footer": "components/xzs-footer/xzs-footer",
+    "xzs-product-item": "components/xzs-product-item/xzs-product-item",
     "van-icon": "@vant/weapp/icon/index",
     "van-loading": "@vant/weapp/loading/index",
-    "xzs-footer": "components/xzs-footer/xzs-footer"
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
   }
 }

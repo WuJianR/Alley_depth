@@ -3,6 +3,6 @@
 		<image class="pic" src="/static/images/logo.jpg" mode="heightFix"/>
 	</navigator>
 	<view class="search">
-		<icon type="search" color="#BDA066" size="28"/>
+		<icon type="search" color="#BDA066" size="28" bindtap="clickPhone"/>
 	</view>
 </view>

@@ -22,12 +22,12 @@
 <view class="scrollNav">
   <!-- 微信原生可滚动视图区域组件 -->
   <scroll-view scroll-x>
-    <view class="scrollItem" wx:for="{{projectList}}" wx:key="_id">
+    <navigator url="/pages/classify/classify?idx={{index}}" open-type="reLaunch" class="scrollItem" wx:for="{{projectList}}" wx:key="_id">
       <view class="itemImg">
         <image src="{{item.icon}}" alt="" class="pic"/>
       </view>
       <view class="itemName">{{item.classname}}</view>
-    </view>
+    </navigator>
   </scroll-view>
 </view>
 

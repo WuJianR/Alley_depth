@@ -18,6 +18,7 @@ Page({
       // 值得学习
       res.data.content = res.data.content.replace(/<p/gi, "<p class='pstyle'")
       res.data.content = res.data.content.replace(/<img/gi, "<img class='imgstyle'")
+      // 设置导航标签页标题
       wx.setNavigationBarTitle({
         title: res.data.title
       })

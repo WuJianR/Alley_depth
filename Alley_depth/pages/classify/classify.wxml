@@ -1,2 +1,21 @@
 <xzs-header></xzs-header>
-<text>pages/classify/classify.wxml</text>
+<view class="banner">
+	<image src="/static/images/teaBanner.jpg" mode="" class="pic"/>
+</view>
+<van-tabs active="{{ active }}" title-active-color="#BDA066" color="#BDA066" animated border id="myTabs" bind:change="onChange">
+  <van-tab wx:for="{{navList}}" wx:key="_id" title="{{item.classname}}"></van-tab>
+</van-tabs>
+
+<view class="content">
+	<view class="body">
+		<view class="box" wx:for="{{proList}}" wx:key="_id">
+			<xzs-product-item item="{{item}}"></xzs-product-item>
+		</view>
+	</view>
+	<view class="loadOut">
+		<van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+	<view class="noData" wx:else>没有更多数据了~</view>
+	</view>
+</view>
+
+<xzs-footer></xzs-footer>

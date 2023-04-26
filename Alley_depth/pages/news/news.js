@@ -76,7 +76,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    // 巧妙的上拉触底事件，需要注意许多细节，值得学习
+    // 巧妙的下拉刷新页面，需要注意许多细节，值得学习
     this.setData({
       newsList: [],
       isTotal: false,
@@ -89,7 +89,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    // 巧妙的下拉刷新页面，需要注意许多细节，值得学习
+    // 巧妙的上拉触底事件，需要注意许多细节，值得学习
     if(this.data.isTotal) return
     this.setData({
       loading: true

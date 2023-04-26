@@ -18,6 +18,9 @@ Page({
       // 值得学习
       res.data.content = res.data.content.replace(/<p/gi, "<p class='pstyle'")
       res.data.content = res.data.content.replace(/<img/gi, "<img class='imgstyle'")
+      wx.setNavigationBarTitle({
+        title: res.data.title
+      })
       let newData = {}
       Object.assign(newData, res.data)
       this.setData({
@@ -81,6 +84,19 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
+    return {
+      title: this.data.detail.title,
+      path: "/pages/newsDetail/newsDetail?id=" + this.data.detail._id
+    }
+  },
 
+  /**
+   * 用户点击右上角转发到朋友圈
+  */
+  onShareTimeline() {
+    return {
+      title: this.data.detail.title,
+      path: "/pages/newsDetail/newsDetail?id=" + this.data.detail._id
+    }
   }
 })
